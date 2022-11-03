@@ -15,7 +15,6 @@ import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
 
 import DAO.AdminDAO;
 import DAO.ImagesDAO;
-import DTO.AdminDTO;
 import DTO.ImagesDTO;
 import DTO.ProductDTO;
 
