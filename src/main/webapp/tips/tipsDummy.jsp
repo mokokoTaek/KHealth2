@@ -100,6 +100,7 @@
 		</div>
 
 		<script>
+		//hi
             	$("#tipswrite").on("click",function(){
             		location.href = "/tips/tipswrite.jsp"
             	})
