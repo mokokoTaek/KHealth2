@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,17 +8,32 @@
 <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
 </head>
 <body>
-<form action="/product.admin" method="post" enctype="multipart/form-data">
+	<form action="/product.admin" method="post"
+		enctype="multipart/form-data">
 
-			<fieldset>
-				<legend>Attachments</legend>
-				<button id="fileAdd" type="button">+</button>
 
-			</fieldset>
-			
-			<button>제출</button>
-			
-			<script>
+		<div class="header">신규 판매상품 등록</div>
+		<div>
+			<input type="text" placeholder="제품 이름 입력" name="product_name">
+		</div>
+
+		<div>
+			<input type="text" placeholder="제품 가격 입력" name="product_price">
+		</div>
+
+		<div>
+			<input type="text" placeholder="제품 최초 재고 수 입력" name="product_count">
+		</div>
+		
+		<fieldset>
+			<legend>Attachments</legend>
+			<button id="fileAdd" type="button">+</button>
+
+		</fieldset>
+
+		<button>제출</button>
+
+		<script>
 			let count = 0;
 			$("#fileAdd").on("click", function() {
 
@@ -47,6 +62,6 @@
 				$("#fileAdd").parent().append(fileDiv);
 			})
 			</script>
-</form>
+	</form>
 </body>
 </html>
