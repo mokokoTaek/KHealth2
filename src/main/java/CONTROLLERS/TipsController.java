@@ -14,7 +14,7 @@ import DAO.TipsDAO;
 import DTO.TipsDTO;
 
 @WebServlet("*.tips")
-public class TIpsController extends HttpServlet {
+public class TipsController extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
